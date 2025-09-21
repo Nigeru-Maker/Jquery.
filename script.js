@@ -1,7 +1,12 @@
-function showTime() {
-	document.getElementById('currentTime').innerHTML = new Date().toUTCString();
-}
-showTime();
-setInterval(function () {
-	showTime();
-}, 1000);
+$(document).ready(function(){
+    $("#myButton").click(function(){
+        $("#myParagraph").slideToggle("slow");
+    });
+	
+// for "y"
+    $(document).keyup(function(event){
+        if(event.which === 89){ 
+            $("#myParagraph").slideToggle("slow");
+        }
+    });
+});
