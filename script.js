@@ -7,9 +7,10 @@ $(document).ready(function() {
 
     $(document).keyup(function(event) {
         if (event.key && event.key.toLowerCase() === 'y') {
-            alert("Letter 'Y' pressed – toggling text");
+            alert("Letter 'Y' pressed);
             $("#myParagraph").slideToggle("slow");
         }
     });
 
 });
+
