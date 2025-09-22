@@ -1,6 +1,8 @@
 $(document).ready(function() {
 
     $("#myButton").click(function() {
+         $("p").slideToggle("slow");
+        
         alert("Button is Clicked")
     });
 
@@ -11,5 +13,6 @@ $(document).ready(function() {
     });
 
 });
+
 
 
