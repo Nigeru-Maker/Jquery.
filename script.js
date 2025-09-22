@@ -1,18 +1,15 @@
 $(document).ready(function() {
 
     $("#myButton").click(function() {
-         $("p").slideToggle("slow");
-        
-        alert("Button is Clicked")
+        alert("Button is Clicked");
+        $("p").slideToggle("slow");
     });
 
     $(document).keyup(function(event) {
-        if (event.which==89) {
-            alert("Letter 'Y' pressed);
+        if (event.key && event.key.toLowerCase() === 'y') {
+            alert("Letter 'Y' pressed – toggling text");
+            $("p").slideToggle("slow");
         }
     });
 
 });
-
-
-
